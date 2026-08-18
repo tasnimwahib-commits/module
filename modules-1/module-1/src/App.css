@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+  background: #4f46e5;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.small-title {
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Main */
+
+.profile-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+/* Cards */
+
+.profile-container > * {
+  background: white;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+
+.profile-container h2 {
+  color: #4f46e5;
+  margin-top: 0;
+}
+
+/* Lists */
+
+.profile-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-container li {
+  background: #f0f1ff;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border-radius: 10px;
+}
+
+/* Links */
+
+.profile-container a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.profile-container a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #6b7280;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .profile-container {
+    width: 95%;
+  }
+}
