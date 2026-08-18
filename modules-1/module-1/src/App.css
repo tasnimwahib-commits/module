@@ -1,12 +1,13 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f6fb;
-  color: #1f2937;
+  background: #f5f7ff;
+  color: #222;
 }
 
 .app {
@@ -14,97 +15,117 @@ body {
 }
 
 /* Header */
-
 .header {
-  background: #4f46e5;
-  color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
 }
 
 .small-title {
-  font-size: 13px;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  opacity: 0.9;
 }
 
 .header h1 {
-  font-size: 42px;
-  margin: 10px 0;
+  font-size: 48px;
+  margin-bottom: 12px;
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: 19px;
   opacity: 0.9;
 }
 
 /* Main */
-
 .profile-container {
   width: 90%;
-  max-width: 900px;
-  margin: 40px auto;
+  max-width: 850px;
+  margin: -35px auto 50px;
+  position: relative;
 }
 
 /* Cards */
-
-.profile-container > * {
+.profile-container > section {
   background: white;
   padding: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   border-radius: 18px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* Headings */
-
+/* Section headings */
 .profile-container h2 {
   color: #4f46e5;
-  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
-/* Lists */
+/* About */
+.profile-container section:first-child p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 16px;
+}
 
+/* Skills */
 .profile-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   list-style: none;
-  padding: 0;
 }
 
 .profile-container li {
-  background: #f0f1ff;
-  padding: 12px 15px;
-  margin: 8px 0;
-  border-radius: 10px;
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.2s;
 }
 
-/* Links */
+.profile-container li:hover {
+  background: #4f46e5;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Contact */
+.profile-container section:last-child p {
+  color: #666;
+}
 
 .profile-container a {
   color: #4f46e5;
-  text-decoration: none;
   font-weight: bold;
 }
 
-.profile-container a:hover {
-  text-decoration: underline;
-}
-
 /* Footer */
-
 footer {
   text-align: center;
-  padding: 30px;
-  color: #6b7280;
+  padding: 25px;
+  color: #888;
+  font-size: 14px;
 }
 
 /* Mobile */
-
 @media (max-width: 600px) {
+  .header {
+    padding: 50px 15px;
+  }
+
   .header h1 {
-    font-size: 32px;
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 16px;
   }
 
   .profile-container {
-    width: 95%;
+    width: 92%;
   }
 }
